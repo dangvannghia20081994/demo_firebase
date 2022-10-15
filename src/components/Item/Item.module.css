@@ -1,0 +1,31 @@
+.item {
+    display: flex;
+    align-items: center;
+    font-size: min(1.2rem, 3.3vw);
+    padding: min(6px, 2.5vw);
+    border-radius: inherit;
+    cursor: pointer;
+}
+
+.item:hover {
+    background: var(--background-3);
+}
+
+.title {
+    font-weight: 500;
+    margin-left: min(10px, 2.8vw);
+}
+
+.icon {
+    height: min(36px, 10vw);
+    width: min(36px, 10vw);
+    background-color: var(--background-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.awesomIco {
+    font-size: min(1.5rem, 4vw);
+}

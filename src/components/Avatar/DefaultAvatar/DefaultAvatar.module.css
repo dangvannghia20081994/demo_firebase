@@ -1,0 +1,12 @@
+.defaultAvt {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e91e63;
+    color: white;
+    font-size: min(1.8rem, 5vw);
+    font-weight: 500;
+    border-radius: 50%;
+}

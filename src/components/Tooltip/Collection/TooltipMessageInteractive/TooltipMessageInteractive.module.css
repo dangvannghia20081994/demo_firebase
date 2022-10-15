@@ -1,0 +1,18 @@
+.wrapper {
+    top: calc(100% + min(18px, 5vw));
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    background: var(--background-9);
+    font-size: min(1.3rem, 3.6vw);
+    color: var(--color-5);
+}
+
+.tooltip {
+    padding: min(6px, 1.7vw) min(10px, 2.8vw);
+}
+
+.tooltip::after, .tooltip::before {
+    height: min(10px, 2.8vw);
+    width: min(10px, 2.8vw);
+}

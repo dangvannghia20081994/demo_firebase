@@ -1,0 +1,63 @@
+.room {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: min(10px, 2.8vw);
+    position: relative;
+}
+
+.room:hover {
+    background: var(--background-3);
+}
+
+.room > *:not(:first-child) {
+    margin-left: min(10px, 2.8vw);
+}
+
+.left {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.onlineStt {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.avatar {
+    width: min(50px, 14vw);
+    height: min(50px, 14vw);
+}
+
+.right {
+    width: calc(100% - min(50px, 14vw));
+}
+
+.displayName {
+    max-width: 66%;
+    font-size: min(1.4rem, 3.9vw);
+    font-weight: 500;
+    color: var(--color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.messWr {
+    display: flex;
+    align-items: center;
+    margin-top: min(2px, .5vw);
+}
+
+.status {
+    height: min(10px, 2.8vw);
+    width: min(10px, 2.8vw);
+    border-radius: 50%;
+    background: var(--primary-color-2);
+    position: absolute;
+    top: 50%;
+    right: min(10px, 2.8vw);
+    transform: translateY(-50%);
+}

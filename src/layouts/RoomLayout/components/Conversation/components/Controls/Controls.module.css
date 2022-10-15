@@ -1,0 +1,296 @@
+.control {
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: min(4px, 1.1vw);
+    background: var(--background-6);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    position: relative;
+    z-index: 3;
+}
+
+.control .left {
+    display: flex;
+}
+
+.control .back {
+    display: flex;
+    align-items: center;
+    padding: min(10px, 2.8vw);
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: min(50px, 13.9vw);
+}
+
+.control .back:hover {
+    background: var(--background-2);
+}
+
+.back .leftArrow {
+    color: #2196f3;
+}
+
+.back .num {
+    background: #2196f3;
+    color: white;
+    height: min(18px, 5vw);
+    width: min(18px, 5vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: min(1.2rem, 3.3vw);
+    margin-left: min(4px, 1.1vw);
+}
+
+.fUser {
+    display: flex;
+    align-items: center;
+    margin-left: min(6px, 1.7vw);
+    cursor: pointer;
+    padding: min(10px, 2.8vw);
+    border-radius: 4px;
+}
+
+.fUser:hover {
+    background: var(--background-2);
+}
+
+.fUser .des {
+    margin-left: min(10px, 2.8vw);
+}
+
+.des .name {
+    color: var(--color);
+    font-size: min(1.5rem, 4.2vw);
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 50vw;
+    text-overflow: ellipsis;
+}
+
+.des .time {
+    color: var(--color-2);
+    font-size: min(1.2rem, 3.3vw);
+}
+
+.avatar {
+    position: relative;
+    width: min(40px, 11.11vw);
+    height: min(40px, 11.11vw);
+    flex-shrink: 0;
+}
+
+.userStt {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.control .more {
+    height: min(30px, 8.3vw);
+    width: min(30px, 8.3vw);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: min(1.8rem, 5vw);
+    color: #2196f3;
+    background: transparent;
+}
+
+.control .more:hover {
+    background: var(--background-2);
+}
+
+.right {
+    position: relative;
+}
+
+.roomOptions {
+    position: absolute;
+    list-style: none;
+    color: var(--color);
+    top: 100%;
+    right: 0;
+    background: var(--background);
+    padding: min(4px, 1.2vw);
+    border-radius: 4px;
+    font-size: min(1.3rem, 3.6vw);
+    box-shadow: var(--box-shadow);
+}
+
+.roomOption {
+    cursor: pointer;
+    padding: min(10px, 2.8vw) min(18px, 5vw);
+    border-radius: 4px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.roomOption:hover {
+    background: var(--background-3)
+}
+
+.roomOption .optionTitle {
+    width: max-content;
+    margin-left: min(10px, 2.8vw);
+}
+
+.rmRoom {
+    color: red;
+}
+
+.noteRemove {
+    color: var(--color-2);
+    font-size: min(15px, 4.2vw);
+    margin-bottom: min(10px, 2.8vw);
+}
+
+.removeRoomControls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.removeRoomControls>*:not(:last-child) {
+    margin-right: min(10px, 2.8vw);
+}
+
+.groupNameInput {
+    margin: min(12px, 3.4vw) 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+.controls .btn:not(:first-child) {
+    margin-right: min(6px, 1.7vw);
+}
+
+.photo {
+    height: min(200px, 55.5vw);
+    width: min(200px, 55.5vw);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: min(18px, 5vw) auto;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.memsList {
+    height: 38vh;
+    overflow-y: auto;
+}
+
+.addMem {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: min(10px, 2.8vw);
+    margin-top: min(10px, 2.8vw);
+    cursor: pointer;
+    color: var(--color);
+    height: min(52px, 14.4vw);
+}
+
+.addMem:hover {
+    background: var(--background-3);
+}
+
+.addMemIco {
+    font-size: min(2.2rem, 6.2vw);
+}
+
+.addMemTitle {
+    font-size: min(1.4rem, 3.9vw);
+    margin-left: min(10px, 2.8vw);
+    font-weight: 500;
+}
+
+.memSearhInput {
+    display: flex;
+    align-items: center;
+    border: solid min(2px, .5vw) var(--border-color);
+    padding: min(6px, 1.6vw) min(10px, 2.8vw);
+    border-radius: min(6px, 1.6vw);
+}
+
+.memSearchIco {
+    color: var(--color-2);
+    font-size: min(1.8rem, 5vw);
+}
+
+.memSearhInput input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--color);
+    margin-left: min(10px, 2.8vw);
+    font-size: min(1.5rem, 4.2vw);
+    font-weight: 500;
+}
+
+.memResult  {
+    margin-top: min(10px, 2.8vw);
+    height: 36vh;
+    overflow-y: auto;
+}
+
+.memResult .memOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: min(10px, 2.8vw);
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.memResult .memOption:hover {
+    background-color: var(--background-3);
+}
+
+.memResult .memOption:not(:first-child) {
+    margin-top: min(10px, 2.8vw);
+}
+
+.addMemBtnAccept {
+    width: 100%;
+}
+
+.addMemBtnDark {
+    width: 100%;
+    cursor: initial;
+    background-color: var(--background-3);
+    opacity: .3;
+}
+
+.addMemBtnDark:hover {
+    background-color: var(--background-3);
+}
+
+/* Responsive */
+@media all and (min-width: 768px) {
+    .control .back {
+        display: none;
+    }
+}

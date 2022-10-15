@@ -1,0 +1,13 @@
+.nameInput {
+    margin: min(12px, 3.4vw) 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+.controls .btn:not(:first-child) {
+    margin-right: min(6px, 1.7vw);
+}

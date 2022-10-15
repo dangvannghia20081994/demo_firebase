@@ -1,0 +1,14 @@
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 4px;
+    background: linear-gradient(to right, #3b78fc, #fa5b7f);
+    width: 0%;
+    z-index: 10;
+}
+
+.dur {
+    transition: .1s;
+}

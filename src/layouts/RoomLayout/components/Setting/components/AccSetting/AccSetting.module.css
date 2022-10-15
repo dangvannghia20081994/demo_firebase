@@ -1,0 +1,60 @@
+.photoURL {
+    height: min(77px, 21.4vw);
+    width: min(77px, 21.4vw);
+    border-radius: 50%;
+    position: relative;
+    align-self: flex-start;
+    border: solid 1px var(--border-color);
+}
+
+.photoURL .defaultAvt {
+    border-radius: 50%;
+    font-size: min(3.2rem, 8.8vw);
+}
+
+.photoURL img {
+    border-radius: 50%;
+}
+
+.cam {
+    color: white;
+    background: #3aa8ff;
+    height: min(30px, 8.3vw);
+    width: min(30px, 8.3vw);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: min(1.6rem, 4.4vw);
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.displayName {
+    margin-left: min(10px, 2.8vw);
+    display: flex;
+    align-items: center;
+}
+
+.displayName h5 {
+    font-weight: 500;
+    font-size: min(1.6rem, 4.4vw);
+}
+
+.editName {
+    color: white;
+    background: #3aa8ff;
+    height: min(26px, 7.2vw);
+    width: min(26px, 7.2vw);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: min(1.2rem, 3.3vw);
+    cursor: pointer;
+    margin-left: min(10px, 2.8vw);
+    flex-shrink: 0;
+    align-self: flex-start;
+}

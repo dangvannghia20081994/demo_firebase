@@ -1,0 +1,129 @@
+.sidebar {
+    width: 100%;
+    padding: min(10px);
+}
+
+.sidebar .header .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.sidebar .photo {
+    cursor: pointer;
+    height: min(40px, 11vw);
+    width: min(40px, 11vw);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sidebar .title {
+    font-size: min(2rem, 5.5vw);
+    font-weight: 500;
+    color: var(--color);
+}
+
+.sidebar .new {
+    font-size: min(2.2rem, 6vw);
+    height: min(40px, 11vw);
+    width: min(40px, 11vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color);
+}
+
+.sidebar .new:hover {
+    background-color: var(--background-3);
+}
+
+.sidebar .search {
+    margin-top: min(16px, 4.4vw);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .search .input {
+    width: 100%;
+    border-radius: 100px;
+    outline: none;
+    height: min(38px, 10.6vw);
+    padding: min(10px, 2.8vw) min(42px, 12vw);
+    border: none;
+    background-color: var(--background-4);
+    font-size: min(1.4rem, 3.88vw);
+    color: var(--color);
+}
+
+.sidebar .search .input.inputSearching {
+    padding: min(10px, 2.8vw) min(20px, 5.6vw);
+}
+
+.sidebar .search .searchIco {
+    font-size: min(1.8rem, 5vw);
+    position: absolute;
+    top: 50%;
+    left: min(14px, 3.8vw);
+    transform: translateY(-50%);
+    color: var(--color-2);
+    z-index: 1;
+}
+
+.sidebar .body {
+    padding: min(18px, 5vw) min(10px, 2.8vw);
+    height: calc(100% - min(100px, 28vw));
+}
+
+/* User Searching */
+.filter {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.filter::-webkit-scrollbar {
+    display: none;
+}
+
+.xSearching {
+    width: min(38px, 10.6vw);
+    height: min(38px, 10.6vw);
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: min(1.8rem, 5vw);
+    color: var(--color-2);
+    margin-right: min(10px, 2.8vw);
+    cursor: pointer;
+}
+
+.xSearching:hover {
+    background: var(--background-4);
+}
+
+.filteredUsers {
+    margin-top: min(18px, 5vw);
+}
+
+/* responsive */
+@media all and (min-width: 768px) {
+    .sidebar {
+        width: 40%;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .sidebar {
+        max-width: 444px;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+}

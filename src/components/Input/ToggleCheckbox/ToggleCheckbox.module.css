@@ -1,0 +1,31 @@
+.toggle {
+    height: min(22px, 6vw);
+    width: min(38px, 10.6vw);
+    display: block;
+    border-radius: 28px;
+    position: relative;
+    cursor: pointer;
+    background: var(--background-5);
+}
+
+.toggle.active {
+    background: var(--primary-color-3);
+}
+
+.toggle::before {
+    content: '';
+    height: min(18px, 5vw);
+    width: min(18px, 5vw);
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    transition: .25s ease-in-out;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+}
+
+.toggle.active::before {
+    left: 100%;
+    transform: translate(calc(-100% - 2px), -50%);
+}

@@ -1,0 +1,19 @@
+.roomList {
+    height: 100%;
+}
+
+.roomFilter {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.roomFilter::-webkit-scrollbar {
+    display: none;
+}
+
+.rooms {
+    margin-top: min(10px, 2.8vw);
+    height: calc(100% - min(36px, 10vw));
+    overflow-y: auto;
+}

@@ -1,0 +1,10 @@
+.wrapper {
+    top: calc(100% + min(4px, 1.1vw));
+    z-index: 1;
+}
+
+.tooltip {
+    padding: min(10px, 2.8rem) min(16px, 4.4vw);
+    top: calc(100% + min(4px, 1.15vw));
+    background-color: #FF9800;
+}

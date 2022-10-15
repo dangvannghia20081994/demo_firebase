@@ -1,0 +1,48 @@
+.isOnline {
+    position: relative;
+    font-weight: bold;
+    color: var(--color-3);
+    background: var(--background);
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: min(.9rem, 2.5vw);
+}
+
+.isOnline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: calc(100% - min(3px, .8vw));
+    width: calc(100% - min(3px, .8vw));
+    background-color: var(--color-4);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.isOnline .content {
+    z-index: 2;
+    position: relative;
+    width: max-content;
+    display: block;
+}
+
+.active {
+    position: relative;
+    height: min(13px, 3.6vw);
+    width: min(13px, 3.6vw);
+    background: var(--background);
+    border-radius: 50%;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    height: min(9px, 2.5vw);
+    width: min(9px, 2.5vw);
+    background: #34af39;
+    border-radius: 50%;
+    bottom: min(2px, .5vw);
+    right: min(2px, .5vw);
+}

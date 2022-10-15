@@ -1,0 +1,34 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field:not(:first-child) {
+    margin-top: 10px;
+}
+
+.btn {
+    background: #fa5b7f;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    opacity: .4;
+    cursor: context-menu;
+    transition: opacity .15s;
+}
+
+.btn:hover {
+    opacity: .4;
+}
+
+.btnActive {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btnActive:hover {
+    opacity: .9;
+}

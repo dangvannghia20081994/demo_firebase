@@ -1,0 +1,133 @@
+@keyframes floatLeft {
+    0% {
+        transform: translateX(150%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes floatRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(150%);
+    }
+}
+
+html[data-theme='light'] {
+    --toast-close-hover-background: #f4f4f4;
+}
+
+html[data-theme='dark'] {
+    --toast-close-hover-background: #1b1b1b;
+}
+
+.active {
+    animation: floatLeft .65s ease-in-out forwards;
+}
+
+.inactive {
+    animation: floatRight .65s ease-in-out forwards;
+}
+
+.wrapper {
+    padding: min(10px, 2.8vw);
+    box-shadow: var(--box-shadow);
+    border-radius: 6px;
+    background: var(--background);
+    color: var(--color);
+    position: relative;
+    right: min(10px, 2.8vw);
+    overflow: hidden;
+    transition: .5s;
+}
+
+@keyframes progressbar_countdown {
+    0% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: .3;
+    }
+}
+
+.wrapper::before {
+    content: '';
+    position: absolute;
+    height: min(3px, .8vw);
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background: var(--primaryColor);
+    animation: progressbar_countdown var(--time) linear .65s forwards;
+}
+
+.wrapper:not(:first-child) {
+    margin-top: min(10px, 2.8vw);
+}
+
+.toast {
+    padding: min(10px, 2.8vw) 0;
+    padding-right: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toast::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: min(4px, 1.1vw);
+    left: 0;
+    top: 0;
+    background: var(--primaryColor);
+    border-radius: 10px;
+}
+
+.icon {
+    padding: 0 min(18px, 5vw);
+    font-size: min(1.6rem, 4.4vw);
+    align-self: flex-start;
+    color: var(--primaryColor)
+}
+
+.message {
+    flex-basis: 100%;
+}
+
+.title {
+    font-size: min(1.4rem, 3.9vw);
+}
+
+.des {
+    font-size: min(1.2rem, 3.3vw);
+    margin-top: min(6px, 1.7vw);
+}
+
+.close {
+    height: min(28px, 7.8vw);
+    width: min(28px, 7.8vw);
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: min(16px, 4.4vw);
+    align-self: flex-start;
+    color: #bcbcbc;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.close:hover {
+    color: #8c8c8c;
+    background: var(--toast-close-hover-background);
+}

@@ -1,0 +1,19 @@
+.btn {
+    padding: min(10px, 2.8vw) min(14px, 3.9vw);
+    border-radius: 6px;
+    color: #2374E1;
+    background: transparent;
+    cursor: pointer;
+    font-size: min(1.3rem, 3.6vw);
+    font-weight: 500;
+    border: none;
+}
+
+.btn:hover {
+    background: var(--background-4);
+}
+
+.title {
+    font-size: min(1.4rem, 4vw);
+    font-weight: bold;
+}

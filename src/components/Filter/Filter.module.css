@@ -1,0 +1,31 @@
+.filterList {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.filterItem {
+    border: solid min(2px, .6vw) var(--border-color);
+    border-radius: 28px;
+    padding: min(8px, 2.3vw) min(18px, 5vw);
+    color: var(--color-2);
+    font-size: min(1.3rem, 3.6vw);
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--background);
+    flex-shrink: 0;
+}
+
+.filterItem:hover {
+    background: var(--background-2);
+}
+
+.filterItem:not(:first-child) {
+    margin-left: min(6px, 1.7vw);
+}
+
+.filterItem.selected {
+    color: white;
+    background: var(--background-8);
+    border-color: var(--background-8);
+}

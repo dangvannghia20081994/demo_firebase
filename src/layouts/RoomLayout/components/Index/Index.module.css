@@ -1,0 +1,20 @@
+.indexTitle {
+    display: none;
+    font-size: min(20px, 5.6vw);
+    color: var(--color-2);
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-3);
+    padding: 5vw;
+    width: 50%;
+    flex-grow: 0;
+    text-align: center;
+}
+
+@media all and (min-width: 768px) {
+    .indexTitle {
+        display: flex;
+        width: 100%;
+    }
+}

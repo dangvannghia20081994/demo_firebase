@@ -1,0 +1,9 @@
+.toasts {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: min(10px, 2.8vw) 0;
+    width: 80%;
+    z-index: 10;
+    max-width: 400px;
+}

@@ -1,0 +1,25 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 28px;
+    border: solid min(2px, 0.5vw) black;
+    height: min(45px, 12vw);
+    background: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .9;
+}
+
+.img {
+    width: min(20px, 5vw);
+    margin-right: min(10px, 2.6vw);
+}
+
+.title {
+    font-size: min(1.4rem, 4vw);
+    font-weight: bold;
+}

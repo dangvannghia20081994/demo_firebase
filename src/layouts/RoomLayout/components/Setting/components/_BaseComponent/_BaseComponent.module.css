@@ -1,0 +1,51 @@
+.settingGr {
+    color: var(--color);
+    padding: min(10px, 2.8vw);
+}
+
+.settingGr:not(:last-of-type) {
+    border-bottom: solid 1px var(--border-color);
+}
+
+.settingGr .title {
+    font-size: min(1.7rem, 4.7vw);
+    font-weight: 500;
+}
+
+.settingGr .main {
+    padding: min(12px, 3.3vw) 0;
+    display: flex;
+    align-items: center;
+}
+
+/*  */
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+}
+
+.setting .icon {
+    height: min(30px, 8.3vw);
+    width: min(30px, 8.3vw);
+    font-size: min(1.6rem, 4.4vw);
+    border-radius: 50%;
+    background: var(--background-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.setting .title {
+    color: var(--color);
+    font-size: min(1.4rem, 3.9vw);
+    margin-left: min(10px, 2.8vw);
+}

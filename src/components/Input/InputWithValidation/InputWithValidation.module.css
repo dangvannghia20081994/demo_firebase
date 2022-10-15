@@ -1,0 +1,64 @@
+html[data-theme='light'] {
+    --input-background: #eeeeee;
+}
+
+html[data-theme='dark'] {
+    --input-background: #222222;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background: var(--input-background);
+    border-radius: 10px;
+    border: solid min(2px, .5vw) var(--border-color);
+    position: relative;
+}
+
+.wrapper:focus-within {
+    border-color: #fa5b7f;
+}
+
+.wrapper:focus-within .label {
+    color: #fa5b7f;
+}
+
+.icon {
+    font-size: min(1.8rem, 5vw);
+}
+
+.label {
+    composes: icon;
+    color: #949494;
+}
+
+.input {
+    width: 100%;
+    padding: min(10px, 2.8vw);
+    border: none;
+    outline: none;
+    font-size: min(1.5rem, 4vw);
+    background: transparent;
+    color: var(--color);
+    font-weight: 500;
+}
+
+.succStt {
+    composes: icon;
+    color: #24ad2a;
+}
+
+.errStt {
+    composes: icon;
+    color: #ff3333;
+}
+
+.err {
+    font-size: min(1.3rem, 3.6vw);
+    font-weight: 500;
+}
+
+.err:not(:first-child) {
+    margin-top: min(10px, 2.8vw);
+}

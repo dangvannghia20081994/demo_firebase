@@ -1,0 +1,27 @@
+.user {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: min(6px, 1.7vw);
+    cursor: pointer;
+}
+
+.user:hover {
+    background: var(--background-3);
+}
+
+.user:not(:first-child) {
+    margin-top: min(10px, 2.8vw);
+}
+
+.avt {
+    width: min(40px, 11.1vw);
+    height: min(40px, 11.1vw);
+}
+
+.name {
+    color: var(--color);
+    margin-left: min(10px, 2.8vw);
+    font-size: min(1.4rem, 3.9vw);
+    font-weight: 500;
+}

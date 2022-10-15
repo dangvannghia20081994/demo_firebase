@@ -1,0 +1,31 @@
+.conversation {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: var(--background);
+    position: fixed;
+    z-index: 2;
+    left: 100%;
+    top: 0;
+    transition: .35s ease-out;
+}
+
+.conversation.active {
+    left: 0;
+}
+
+@media all and (min-width: 768px) {
+    .conversation {
+        position: relative;
+        border-left: solid 1px var(--border-color);
+        width: 60%;
+        left: 0;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .conversation {
+        width: calc(100% - 444px);
+    }
+}

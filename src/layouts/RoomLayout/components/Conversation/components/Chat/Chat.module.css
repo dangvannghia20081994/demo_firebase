@@ -1,0 +1,222 @@
+.chatZone {
+    padding: min(10px, 2.8vw);
+}
+
+.chatZone.chatBorder {
+    border-top: solid 1px var(--border-color);
+}
+
+.replyMessage {
+    margin-bottom: min(18px, 5vw);
+    position: relative;
+}
+
+.closeReply {
+    color: var(--color-2);
+    font-size: min(1.2rem, 3.3vw);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: min(20px, 5.6vw);
+    width: min(20px, 5.6vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.closeReply:hover {
+    background: var(--background-4);
+}
+
+.replyMessage .title {
+    color: var(--color-2);
+    font-size: 10px;
+    font-size: min(1.3rem, 3.6vw);
+    padding-right: min(10px, 2.8vw);
+}
+
+.replyMessage .messReply {
+    color: var(--color);
+    font-size: min(1.2rem, 3.3vw);
+    margin-top: min(3px, .8vw);
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chatWr {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.chatWr>*:not(:first-child) {
+    margin-left: min(10px, 2.8vw);
+}
+
+.icoWr {
+    height: min(36px, 9.5vw);
+    width: min(36px, 9.5vw);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icoWr:hover {
+    background: var(--background-10);
+}
+
+.interactiveIcon {
+    font-size: min(2rem, 5.5vw);
+    color: #0080FF;
+    cursor: pointer;
+}
+
+.chatInput {
+    width: 100%;
+    background: var(--background-10);
+    border-radius: 18px;
+    display: flex;
+    align-items: flex-end;
+    transition: .25s;
+}
+
+.chatInput .input {
+    outline: none;
+    border: none;
+    font-size: min(1.6rem, 4.4vw);
+    color: var(--color);
+    padding: min(7px, 2vw) min(6px, 1.7vw) min(7px, 2vw) min(18px, 5vw);
+    word-break: break-word;
+}
+
+.chooseImg {
+    flex-shrink: 0;
+}
+
+.chooseEmojiWr {
+    position: relative;
+}
+
+.chooseEmoji {
+    flex-shrink: 0;
+}
+
+.sendMessage {
+    flex-shrink: 0;
+}
+
+.inputWr {
+    width: 100%;
+    min-height: min(36px, 9.5vw);
+}
+
+.chatInput .input:empty::before {
+    content: 'Aa';
+    color: var(--color-2);
+}
+
+.addImg {
+    height: min(60px, 16.7vw);
+    width: min(60px, 16.7vw);
+    background: var(--background-5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: var(--color);
+    cursor: pointer;
+}
+
+.filesSelected {
+    display: flex;
+    flex-wrap: wrap;
+    padding: min(8px, 2.3vw) min(8px, 2.3vw) 0;
+}
+
+.fileSelected {
+    position: relative;
+}
+
+.filesSelected>*:not(:nth-child(4n + 1)) {
+    margin-left: min(10px, 2.8vw);
+}
+
+.filesSelected>*:nth-child(n + 5) {
+    margin-top: min(10px, 2.8vw);
+}
+
+.fileSelected .rmFile {
+    position: absolute;
+    font-size: min(1.6rem, 4.5vw);
+    height: min(20px, 5.6vw);
+    width: min(20px, 5.6vw);
+    background: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.fileSelected img, .fileSelected video {
+    width: min(60px, 16.7vw);
+    height: min(60px, 16.7vw);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.fileSelected .video {
+    position: absolute;
+    font-size: min(2.2rem, 6.2vw);
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emojiList {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    width: 80vw;
+    flex-wrap: wrap;
+    background: var(--background-4);
+    border-radius: 18px;
+    padding: 10px;
+    right: 10px;
+    bottom: calc(100% + 18px);
+    justify-content: space-between;
+    z-index: 2;
+    max-width: 300px;
+}
+
+.emojiList::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: inherit;
+    transform: translate(0, 6px) rotate(-88deg) skewX(-30deg);
+    border-bottom-left-radius: 10px;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.emojiList>* {
+    cursor: pointer;
+}
+
+.emojiList img {
+    width: 60px;
+}

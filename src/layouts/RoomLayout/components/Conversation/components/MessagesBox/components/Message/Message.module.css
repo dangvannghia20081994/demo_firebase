@@ -1,0 +1,460 @@
+.messageWr {
+    position: relative;
+    width: 100%;
+}
+
+.messageWr.owner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.messageContent {
+    max-width: 77%;
+    width: fit-content;
+}
+
+.owner .messageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.mess {
+    position: relative;
+    width: fit-content;
+}
+
+.hasFeel {
+    margin-bottom: min(18px, 5vw);
+}
+
+.messageWr:not(:first-child) {
+    margin-top: min(3px, .8vw);
+}
+
+.parentMess {
+    color: var(--color-2);
+    background: var(--background-3);
+    border-radius: 28px;
+    padding: min(10px, 2.8vw) min(18px, 5vw);
+    display: block;
+    position: relative;
+    top: min(4px, 1.1vw);
+    z-index: -1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: min(12px, 3.3vw);
+    max-width: 200px;
+}
+
+.textMess {
+    width: fit-content;
+    padding: min(12px, 3.3vw);
+    font-size: min(1.5rem, 4.2vw);
+    word-break: break-word;
+}
+
+.messageWr.owner .textMess {
+    background: var(--background-8);
+    color: white;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.messageWr.owner:first-of-type .textMess {
+    border-top-right-radius: 28px;
+}
+
+.messageWr.owner:last-of-type .textMess {
+    border-bottom-right-radius: 28px;
+}
+
+.messageWr.notOwn .textMess {
+    background: var(--background-4);
+    color: var(--color);
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.messageWr.notOwn:first-of-type .textMess {
+    border-top-left-radius: 28px;
+}
+
+.messageWr.notOwn:last-of-type .textMess {
+    border-bottom-left-radius: 28px;
+}
+
+.mediaMess {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.media {
+    border-radius: 10px;
+    cursor: pointer;
+    width: min(120px, 33.3vw);
+    height: min(120px, 33.3vw);
+    position: relative;
+}
+
+.media:hover {
+    background: var(--background-3)
+}
+
+.media:not(:nth-child(2n + 1)) {
+    margin-left: min(6px, 1.7vw);
+}
+
+.media:nth-child(n + 3) {
+    margin-top: min(6px, 1.7vw);
+}
+
+.media:first-child:last-child {
+    width: 100%;
+    height: min(150px, 42vw);
+}
+
+.mediaMess .thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: solid 1px var(--border-color);
+}
+
+.videoMarkup {
+    position: absolute;
+    right: min(10px, 2.8vw);
+    bottom: min(10px, 2.8vw);
+    color: white;
+    font-size: min(1.8rem, 5vw);
+    z-index: 2;
+}
+
+.emoji img {
+    width: min(100px, 28vw);
+}
+
+.liked {
+    color: #0080FF;
+    font-size: min(6.2rem, 17vw);
+}
+
+.interactive {
+    position: absolute;
+    display: none;
+    align-items: center;
+    list-style: none;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: min(1.5rem, 4.2vw);
+}
+
+.messageWr:hover .interactive {
+    display: flex;
+}
+
+.interactive>li {
+    height: min(24px, 6.7vw);
+    width: min(24px, 6.7vw);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-2);
+    position: relative;
+}
+
+.interactive>li:hover {
+    background: var(--background-7);
+}
+
+.notOwn .interactive {
+    left: 100%;
+}
+
+.notOwn .interactive>li {
+    margin-left: min(4px, 1.1vw);
+}
+
+.owner .interactive {
+    right: 100%;
+}
+
+.owner .interactive>li {
+    margin-right: min(4px, 1.1vw);
+}
+
+.feelingsList {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    z-index: 3;
+    top: calc(100% + min(4px, 1.1vw));
+    background: var(--background-5);
+    border-radius: 28px;
+    padding: 10px;
+}
+
+.feelingsList.leftDeviation {
+    left: 0;
+}
+
+.feelingsList.rightDeviation {
+    right: 0;
+}
+
+.leftDeviation .feeling:not(:first-child) {
+    margin-left: min(10px, 2.8vw);
+}
+
+.rightDeviation .feeling:not(:last-child) {
+    margin-right: min(10px, 2.8vw);
+}
+
+.feeling {
+    cursor: pointer;
+}
+
+.feeling img {
+    width: min(30px, 8.4vw);
+}
+
+.mediaViewerWr {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.mediaViewer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #626262;
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    filter: blur(10px) brightness(.3);
+}
+
+.mediaViewerWr .mediaContent {
+    position: absolute;
+    max-width: 90%;
+    max-height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+}
+
+.closeMedia {
+    position: absolute;
+    top: min(10px, 2.8vw);
+    left: min(10px, 2.8vw);
+    font-size: min(2.4rem, 6.7vw);
+    height: min(36px, 10vw);
+    width: min(36px, 10vw);
+    background: gainsboro;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.feelOnMess {
+    position: absolute;
+    right: min(20px, 5.6vw);
+    bottom: max(-10px, -2.8vw);
+    z-index: 2;
+    cursor: pointer;
+    background: var(--background-5);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.feelOnMess>.feel {
+    height: min(22px, 6.2vw);
+    width: min(22px, 6.2vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: inherit;
+    position: relative;
+}
+
+.feelOnMess>.feel:not(:first-child) {
+    margin-left: max(-6px, -1.7vw);
+}
+
+.feelOnMess>.feel>img {
+    width: min(16px, 4.5vw);
+}
+
+.feelOnMess .feelCount {
+    color: var(--color);
+    padding: 0 min(8px, 2.3vw) 0 0px;
+    font-size: min(1.2rem, 3.3vw);
+}
+
+.feelDetail .filterBar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: var(--color-2);
+    font-size: min(1.4rem, 3.9vw);
+    font-weight: 500;
+}
+
+.feelDetail .filterBar > li {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.feelDetail .filterBar > li:hover {
+    background: var(--background-2);
+}
+
+.feelDetail .filterBar > li:not(:first-child) {
+    margin-left: min(10px, 2.8vw);
+}
+
+.feelDetail .feelD {
+    display: flex;
+    align-items: center;
+}
+
+.feelDetail .feelD img {
+    width: min(18px, 5vw);
+    margin-right: min(4px, 1.2vw);
+}
+
+.feelList {
+    list-style: none;
+    margin-top: min(18px, 5vw);
+    height: 30vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.feelItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: min(10px, 2.8vw);
+    border-radius: 4px;
+}
+
+.feelItem:not(:first-child) {
+    margin-top: min(6px, 1.7vw);
+}
+
+.feelItem .left {
+    display: flex;
+    align-items: center;
+}
+
+.feelItem .left .avt {
+    width: min(45px, 12.5vw);
+    height: min(45px, 12.5vw);
+    flex-shrink: 0;
+}
+
+.feelItem .left .name {
+    margin-left: min(10px, 2.8vw);
+}
+
+.feelItem .left h3 {
+    color: var(--color);
+    font-size: min(1.4rem, 3.9vw);
+    font-weight: 500;
+}
+
+.feelItem .left .unfeel {
+    color: var(--color-2);
+    font-size: min(1.2rem, 3.3vw);
+    margin-top: min(2px, .5vw);
+}
+
+.feelItem .right {
+    margin-left: min(10px, 2.8vw);
+}
+
+.feelItem .right img {
+    height: min(30px, 8.3vw);
+    width: min(30px, 8.3vw);
+    object-fit: cover;
+}
+
+.filter {
+    color: var(--background-8);
+    position: relative;
+}
+
+.filter::before {
+    content: "";
+    position: absolute;
+    height: min(2px, .5vw);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: var(--background-8);
+}
+
+.ownFeel {
+    cursor: pointer;
+}
+
+.ownFeel:hover {
+    background: var(--background-4);
+}
+
+.noteRemove {
+    color: var(--color-2);
+    font-size: min(15px, 4.2vw);
+    margin-bottom: min(10px, 2.8vw);
+}
+
+.removeMessageControls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.removeMessageControls > *:not(:last-child) {
+    margin-right: min(10px, 2.8vw);
+}
+
+/* Responsive */
+@media all and (min-width: 555px) {
+    .messageContent {
+        max-width: 55%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .messageContent {
+        max-width: 77%;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .messageContent {
+        max-width: 612px;
+    }
+}

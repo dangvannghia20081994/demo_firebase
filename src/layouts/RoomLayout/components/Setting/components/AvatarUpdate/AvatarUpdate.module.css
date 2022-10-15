@@ -1,0 +1,23 @@
+.photo {
+    height: min(200px, 55.5vw);
+    width: min(200px, 55.5vw);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: min(18px, 5vw) auto;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+.controls .btn:not(:first-child) {
+    margin-right: min(6px, 1.7vw);
+}

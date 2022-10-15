@@ -1,0 +1,49 @@
+@keyframes rise {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.form {
+    width: min(480px, 90vw);
+    border-radius: 10px;
+    animation: rise .35s ease-in-out forwards;
+}
+
+.header {
+    border-bottom: solid min(2px, .5vw) var(--border-color);
+    padding: min(10px, 2.8vw) min(18px, 5vw);
+    position: relative;
+}
+
+.header .title {
+    font-size: min(2rem, 5.5vw);
+    color: var(--color);
+}
+
+.header .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: min(10px, 2.8vw) min(18px, 5vw);
+    font-size: min(1.8rem, 5vw);
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    color: #b2b2b2;
+}
+
+.header .close:hover {
+    color: #969696;
+}
+
+.body {
+    padding: min(10px, 2.8vw);
+    margin: min(10px, 2.8vw);
+}

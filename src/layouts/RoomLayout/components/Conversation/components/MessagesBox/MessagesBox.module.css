@@ -1,0 +1,87 @@
+.unvisiable {
+    visibility: hidden !important;
+}
+
+.messagesBox {
+    height: 100%;
+    width: 100%;
+    padding: min(10px, 2.8vw);
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.messageGroup {
+    display: flex;
+}
+
+.messageGroup .fUser {
+    align-self: flex-end;
+    height: min(28px, 7.8vw);
+    width: min(28px, 7.8vw);
+    flex-shrink: 0;
+    margin-right: min(10px, 2.8vw);
+}
+
+.messageGroup:not(:first-child) {
+    margin-top: min(30px, 8.4vw);
+}
+
+.ownerName {
+    color: var(--color-2);
+    font-size: min(12px, 3.4vw);
+    margin-bottom: min(10px, 2.8vw);
+}
+
+.messageGroup .msGr {
+    width: 100%;
+}
+
+.owner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.timeline {
+    color: var(--color-2);
+    text-align: center;
+    font-size: min(1.3rem, 3.6vw);
+    margin-top: min(30px, 8.4vw);
+}
+
+.toNewMess {
+    color: var(--background-8);
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: min(100px, 28vw);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.scrollToBottom {
+    font-size: min(1.8rem, 5vw);
+    height: min(45px, 12.5vw);
+    width: min(45px, 12.5vw);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 8px -1px var(--background-5);
+    background: var(--background);
+}
+
+.newMess {
+    font-size: min(1.3rem, 3.6vw);
+    box-shadow: 0px 1px 8px -1px var(--background-5);
+    background: var(--background);
+    padding: min(6px, 1.7vw) min(20px, 5.6vw);
+    border-radius: 28px;
+    font-weight: 500;
+}
+
+.newMess .dwArrow {
+    position: relative;
+    left: min(4px, 1.2vw);
+    top: min(1px, 0.28vw);
+}

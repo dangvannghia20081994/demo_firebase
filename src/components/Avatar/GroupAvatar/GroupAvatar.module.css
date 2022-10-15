@@ -1,0 +1,45 @@
+.wrGrAvt {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.groupAvt {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.groupAvt:first-child {
+    top: 0;
+    left: 0;
+}
+
+.groupAvt:nth-child(2) {
+    bottom: 0;
+    right: 0;
+}
+
+.photoURL {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.grIco {
+    background: var(--color-2);
+    color: var(--background);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: min(1rem, 2.8vw);
+    height: min(20px, 5.5vw);
+    width: min(20px, 5.5vw);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,11 @@
+.wrapper {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+}
+
+.optionItem {
+    z-index: 1;
+    position: relative;
+    color: var(--color);
+}

@@ -1,0 +1,46 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.logo {
+    font-size: min(5rem, 13vw);
+}
+
+.loginMethods {
+    width: min(460px, 86%);
+    margin-top: min(60px, 15vw);
+}
+
+.loginMethod:not(:first-child) {
+    margin-top: min(16px, 4vw);
+}
+
+.loginMethods .originPlatform {
+    background: #f75a7f;
+    border-color: #f75a7f;
+    color: white;
+}
+
+.text {
+    margin-top: min(18px, 5vw);
+    font-weight: bold;
+    font-size: min(1.4rem, 4vw);
+    color: var(--color);
+}
+
+.link {
+    color: #f75a7f;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.register {
+    padding-left: min(5px, 1.4vw);
+}

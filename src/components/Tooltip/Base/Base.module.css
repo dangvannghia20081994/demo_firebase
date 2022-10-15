@@ -1,0 +1,34 @@
+.wrapper {
+    position: absolute;
+    left: 0;
+    border-radius: 6px;
+}
+
+.tooltip {
+    position: relative;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    height: min(13px, 3.6vw);
+    width: min(13px, 3.6vw);
+    background: inherit;
+    z-index: -1;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    height: min(13px, 3.6vw);
+    width: min(13px, 3.6vw);
+    background: inherit;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}

@@ -1,0 +1,27 @@
+@keyframes animation {
+    0% {
+        left: -200%;
+    }
+    100% {
+        left: 200%;
+    }
+}
+
+.avtSkeleton {
+    background: var(--background-4);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.avtSkeleton::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background: var(--background-5);
+    filter: blur(18px);
+    animation: animation 3s infinite;
+}

@@ -1,0 +1,21 @@
+.wrapper {
+    background: var(--background);
+    width: 100%;
+    z-index: 3;
+    border-radius: 10px;
+    top: calc(100% + min(15px, 4vw));
+}
+
+.tooltip {
+    padding: min(4px, 1.1vw);
+    box-shadow: var(--box-shadow);
+}
+
+.tooltip::before {
+    box-shadow: inherit;
+    left: min(22px, 6vw);
+}
+
+.tooltip::after {
+    left: min(22px, 6vw);
+}

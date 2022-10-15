@@ -1,0 +1,43 @@
+.message {
+    max-width: 66%;
+    font-size: min(1.3rem, 3.6vw);
+    color: var(--color-2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.message .notText {
+    width: min(20px, 5.6vw);
+}
+
+.message .notText:not(:first-child) {
+    margin-left: min(6px, 1.7vw);
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+.likeIco {
+    color: var(--color-2);
+    font-size: min(1.6rem, 4.5vw);
+}
+
+.likeIco.unseenMessage {
+    color: var(--primary-color-2);
+}
+
+.timestamp {
+    color: var(--color-2);
+    font-size: min(1.4rem, 3.9vw);
+    width: max-content;
+    flex-shrink: 0;
+    margin-left: min(10px, 2.8vw);
+}
+
+.unseenMessage {
+    color: var(--color);
+    font-weight: 600;
+}
